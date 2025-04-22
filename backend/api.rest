@@ -1,0 +1,13 @@
+GET http://localhost:5000/api/tasks
+###
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{"name": "Test Task", "description": "Test Description"}
+###
+PUT http://localhost:5000/api/tasks/1
+Content-Type: application/json
+
+{"name": "Updated Task", "description": "Updated Description"}
+###
+DELETE http://localhost:5000/api/tasks/1
